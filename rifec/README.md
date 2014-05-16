@@ -15,9 +15,7 @@ $~ docker -t build rifec .
 ## Running the container
 
 ```
-docker run -v /mnt/yourIncomingDirection/:/mnt/pictures -e
-MACADDR="CA-ME-RA-MA-CA-DD-RE-SS" -e
-UPLOADKEY="youruploadkey" -p 59278:59278 -t rifec:latest
+docker run -v /mnt/yourIncomingDirection/:/mnt/pictures -e MACADDR="CA-ME-RA-MA-CA-DD-RE-SS" -e UPLOADKEY="youruploadkey" -p 59278:59278 -t rifec:latest
 ```
 
 You can specify your own incoming directory, and run the container as often as you like in parallel
