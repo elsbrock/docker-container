@@ -8,4 +8,4 @@ if [ -n "$MOPIDY_USERNAME" ]; then
     sed -i "s/username = demo/username = $MOPIDY_USERNAME/g" /etc/mopidy/mopidy.conf
 fi
 
-exec mopidy --config /etc/mopidy/mopidy.conf
+exec sudo -u mopidy mopidy --config /etc/mopidy/mopidy.conf

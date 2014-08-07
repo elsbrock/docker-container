@@ -35,8 +35,8 @@ RUN apt-get install -y mopidy mopidy-spotify
 # Install mopidy webclient "moped"
 
 RUN apt-get install -y git
-RUN git clone https://github.com/martijnboland/moped.git /usr/local/src/moped
-RUN ln -s /usr/local/src/moped/dist /etc/mopidy/www
+RUN git clone https://github.com/woutervanwijk/Mopidy-MusicBox-Webclient.git /usr/local/src/mopidy-web
+RUN ln -s /usr/local/src/mopidy-web/webclient /etc/mopidy/www
 
 ##########################################################################################
 # Add configurations
