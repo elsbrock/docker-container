@@ -9,7 +9,7 @@ This solution pipes the output through liquidsoap which then provides a http str
 ```
 $~ git clone https://github.com/schinken/docker-container.git
 $~ cd docker-container/mopidy-stream
-$~ docker -t build mopidy-stream .
+$~ docker build -t mopidy-stream .
 ```
 
 ## Running the container
